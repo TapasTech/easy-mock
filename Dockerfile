@@ -5,7 +5,7 @@ WORKDIR /app
 # Copy the current directory contents into the container at /app
 ADD . /app
 
-RUN npm config set registry=https://registry.npm.taobao.org/
+# RUN npm config set registry=https://registry.npm.taobao.org/
 RUN npm install
 RUN npm run build
 
